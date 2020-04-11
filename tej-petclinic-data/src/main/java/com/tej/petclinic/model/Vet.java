@@ -1,6 +1,4 @@
-package com.tej.pet.clinic.model;
-
-import javax.persistence.PersistenceContext;
+package com.tej.petclinic.model;
 
 /**
  * @project tej-petclinic

@@ -1,4 +1,4 @@
-package com.tej.pet.clinic.model;
+package com.tej.petclinic.model;
 
 /**
  * @project tej-petclinic
