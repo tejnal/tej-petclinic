@@ -2,6 +2,7 @@ package com.tej.petclinic.services.map;
 
 import com.tej.petclinic.model.Owner;
 import com.tej.petclinic.services.CurdService;
+import com.tej.petclinic.services.OwnerService;
 
 import java.util.Set;
 
@@ -9,7 +10,7 @@ import java.util.Set;
  * @project tej-petclinic
  * @autor tejnal on 2020-04-11
  */
-public class OwnerServiceMap extends AbstractMapService<Owner, Long>  implements CurdService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long>  implements OwnerService {
 
 
     @Override
@@ -35,5 +36,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long>  implements
     @Override
     public void delete(Owner object) {
         this.delete(object);
+    }
+
+    @Override
+    public Owner findByLastName() {
+        return null;
     }
 }

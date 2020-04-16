@@ -2,6 +2,7 @@ package com.tej.petclinic.services.map;
 
 import com.tej.petclinic.model.Pet;
 import com.tej.petclinic.services.CurdService;
+import com.tej.petclinic.services.PetService;
 
 import java.util.Set;
 
@@ -9,7 +10,7 @@ import java.util.Set;
  * @project tej-petclinic
  * @autor tejnal on 2020-04-11
  */
-public class PetServiceMap extends AbstractMapService<Pet, Long>  implements CurdService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long>  implements PetService {
     @Override
     public Pet findById(Long id) {
         return super.findById(id);
