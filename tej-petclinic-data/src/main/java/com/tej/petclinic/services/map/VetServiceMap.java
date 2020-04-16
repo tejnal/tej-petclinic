@@ -1,8 +1,8 @@
 package com.tej.petclinic.services.map;
 
 import com.tej.petclinic.model.Vet;
-import com.tej.petclinic.services.CurdService;
 import com.tej.petclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
@@ -10,6 +10,7 @@ import java.util.Set;
  * @project tej-petclinic
  * @autor tejnal on 2020-04-11
  */
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
 

@@ -1,8 +1,8 @@
 package com.tej.petclinic.services.map;
 
 import com.tej.petclinic.model.Owner;
-import com.tej.petclinic.services.CurdService;
 import com.tej.petclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
@@ -10,6 +10,7 @@ import java.util.Set;
  * @project tej-petclinic
  * @autor tejnal on 2020-04-11
  */
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long>  implements OwnerService {
 
 
