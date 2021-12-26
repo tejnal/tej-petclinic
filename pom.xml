@@ -99,7 +99,7 @@
 
 	<scm>
 		<developerConnection>scm:git:git@github.com/tejnal/tej-petclinic.git</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>tej-petclinic-0.0.1</tag>
   </scm>
 
 </project>
