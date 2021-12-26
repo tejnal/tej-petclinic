@@ -1,7 +1,7 @@
 package com.tej.petclinic.services.map;
 
-import com.tej.petclinic.model.Vet;
-import com.tej.petclinic.services.VetService;
+import com.tej.petclinic.model.Pet;
+import com.tej.petclinic.services.PetService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -11,21 +11,19 @@ import java.util.Set;
  * @autor tejnal on 2020-04-11
  */
 @Service
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
-
-
+public class PetServiceMap extends AbstractMapService<Pet, Long>  implements PetService {
     @Override
-    public Vet findById(Long id) {
+    public Pet findById(Long id) {
         return super.findById(id);
     }
 
     @Override
-    public Vet save(Vet object) {
-        return super.save(object.getId(), object);
+    public Pet save(Pet object) {
+        return super.save(object);
     }
 
     @Override
-    public Set<Vet> findAll() {
+    public Set<Pet> findAll() {
         return super.findAll();
     }
 
@@ -35,7 +33,7 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
     }
 
     @Override
-    public void delete(Vet object) {
-            super.delete(object);
+    public void delete(Pet object) {
+        super.delete(object);
     }
 }
