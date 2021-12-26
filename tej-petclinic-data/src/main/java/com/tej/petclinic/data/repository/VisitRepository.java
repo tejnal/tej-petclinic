@@ -1,6 +1,6 @@
-package guru.springframework.sfgpetclinic.repositories;
+package com.tej.petclinic.data.repository;
 
-import guru.springframework.sfgpetclinic.model.Visit;
+import com.tej.petclinic.data.model.Visit;
 import org.springframework.data.repository.CrudRepository;
 
 /**
@@ -8,3 +8,4 @@ import org.springframework.data.repository.CrudRepository;
  */
 public interface VisitRepository extends CrudRepository<Visit, Long> {
 }
+

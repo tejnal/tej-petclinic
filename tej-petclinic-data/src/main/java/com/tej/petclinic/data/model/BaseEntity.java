@@ -1,4 +1,4 @@
-package com.tej.petclinic.model;
+package com.tej.petclinic.data.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

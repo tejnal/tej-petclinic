@@ -1,8 +1,8 @@
-package guru.springframework.sfgpetclinic.services.springdatajpa;
+package com.tej.petclinic.services.springdatajpa;
 
-import guru.springframework.sfgpetclinic.model.Visit;
-import guru.springframework.sfgpetclinic.repositories.VisitRepository;
-import guru.springframework.sfgpetclinic.services.VisitService;
+import com.tej.petclinic.data.model.Visit;
+import com.tej.petclinic.data.repository.VisitRepository;
+import com.tej.petclinic.services.VisitService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 

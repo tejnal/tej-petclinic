@@ -1,6 +1,6 @@
 package com.tej.petclinic.services;
 
-import com.tej.petclinic.model.Vet;
+import com.tej.petclinic.data.model.Vet;
 
 /**
  * @project tej-petclinic

@@ -3,6 +3,8 @@ package com.tej.petclinic.controllers;
 import com.tej.petclinic.services.OwnerService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -19,9 +21,15 @@ public class OwnerController {
         this.ownerService = ownerService;
     }
 
+    @InitBinder
+    public void setAllowedFields(WebDataBinder dataBinder) {
+        dataBinder.setDisallowedFields("id");
+    }
+
     @RequestMapping({"", "/", "/index", "/index.html"})
-    public String listOwners(Model model ) {
+    public String findOwners(Model model ) {
         model.addAttribute("owners", ownerService.findAll());
         return "owner/index";
     }
+
 }

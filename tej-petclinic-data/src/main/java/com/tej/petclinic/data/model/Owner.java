@@ -1,4 +1,4 @@
-package com.tej.petclinic.model;
+package com.tej.petclinic.data.model;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -18,6 +18,7 @@ import java.util.Set;
 @Entity
 @Table(name = "owners")
 public class Owner extends Person {
+
 
     @Builder
     public Owner(Long id, String firstName, String lastName, String address, String city,

@@ -1,6 +1,8 @@
 package com.tej.petclinic.services;
 
-import com.tej.petclinic.model.Owner;
+import com.tej.petclinic.data.model.Owner;
+
+import java.util.List;
 
 /**
  * @project tej-petclinic
@@ -8,6 +10,9 @@ import com.tej.petclinic.model.Owner;
  */
 public interface OwnerService extends CurdService<Owner, Long> {
 
-    Owner findByLastName();
+
+    Owner findByLastName(String lastName);
+
+    List<Owner> findAllByLastNameLike(String lastName);
 
 }

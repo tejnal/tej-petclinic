@@ -1,7 +1,7 @@
-package guru.springframework.sfgpetclinic.services.map;
+package com.tej.petclinic.services.map;
 
-import guru.springframework.sfgpetclinic.model.Speciality;
-import guru.springframework.sfgpetclinic.services.SpecialtyService;
+import com.tej.petclinic.data.model.Speciality;
+import com.tej.petclinic.services.SpecialtyService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 

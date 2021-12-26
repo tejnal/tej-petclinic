@@ -1,6 +1,7 @@
-package guru.springframework.sfgpetclinic.repositories;
+package com.tej.petclinic.data.repository;
 
-import guru.springframework.sfgpetclinic.model.Vet;
+
+import com.tej.petclinic.data.model.Vet;
 import org.springframework.data.repository.CrudRepository;
 
 /**

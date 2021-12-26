@@ -1,17 +1,20 @@
 package com.tej.petclinic.services.map;
 
-import com.tej.petclinic.model.Pet;
+import com.tej.petclinic.data.model.Pet;
 import com.tej.petclinic.services.PetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-/**
- * @project tej-petclinic
- * @autor tejnal on 2020-04-11
- */
 @Service
-public class PetServiceMap extends AbstractMapService<Pet, Long>  implements PetService {
+@Profile({"default", "map"})
+public class PetMapService extends AbstractMapService<Pet, Long>  implements PetService {
+    @Override
+    public Set<Pet> findAll() {
+        return super.findAll();
+    }
+
     @Override
     public Pet findById(Long id) {
         return super.findById(id);
@@ -23,17 +26,12 @@ public class PetServiceMap extends AbstractMapService<Pet, Long>  implements Pet
     }
 
     @Override
-    public Set<Pet> findAll() {
-        return super.findAll();
+    public void delete(Pet object) {
+        super.delete(object);
     }
 
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
-    }
-
-    @Override
-    public void delete(Pet object) {
-        super.delete(object);
     }
 }

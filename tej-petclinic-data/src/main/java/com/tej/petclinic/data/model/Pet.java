@@ -1,4 +1,4 @@
-package com.tej.petclinic.model;
+package com.tej.petclinic.data.model;
 
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
