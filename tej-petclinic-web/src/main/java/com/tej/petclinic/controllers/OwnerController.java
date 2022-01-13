@@ -7,10 +7,7 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-/**
- * @project tej-petclinic
- * @autor tejnal on 2020-04-12
- */
+
 @RequestMapping("/owners")
 @Controller
 public class OwnerController {

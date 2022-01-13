@@ -4,10 +4,6 @@ import com.tej.petclinic.data.model.BaseEntity;
 
 import java.util.*;
 
-/**
- * @project tej-petclinic
- * @autor tejnal on 2020-04-11
- */
 public abstract  class AbstractMapService<T extends BaseEntity,  ID extends Long >  {
 
     protected Map<Long, T> map  = new HashMap<>();
